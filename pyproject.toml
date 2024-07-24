@@ -1,0 +1,17 @@
+[project]
+name = "kwj_history"
+version = "0.1.1"
+description = "Default template for PDM package"
+authors = [
+    {name = "Kimwonjoon", email = "kimpass189@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+hist = "kwj_history.cli:query"
+
+[tool.pdm]
+distribution = true
