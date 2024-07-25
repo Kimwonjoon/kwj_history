@@ -1,4 +1,4 @@
-import pandas as pd
+#import pandas as pd
 import sys
 import argparse
 def cnt(q):
@@ -34,6 +34,7 @@ def double_df(num,d):
     return df2
 
 def query():
+    import pandas as pd
     parser = argparse.ArgumentParser()
 
     parser.add_argument("-s", "--search", help="hist -s <ls>",type=str, action='store')
@@ -54,3 +55,11 @@ def query():
     elif args.day:
         r = day_df(args.day)
         print(r)
+
+def hello_msg():
+    return "hello"
+
+def cmd():
+    msg = hello_msg()
+    print(msg)
+

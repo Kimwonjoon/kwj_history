@@ -27,6 +27,9 @@ test = "pytest"
 ctest = "pytest --cov"
 stest = "pytest -s"
 
+[tool.pytest.ini_options]
+pythonpath = ["src",]
+
 [project.urls]
 Homepage = "https://github.com/Kimwonjoon/kwj_history/tree/0.2.0/args"
 Issues = "https://github.com/Kimwonjoon/kwj_history/issues"
