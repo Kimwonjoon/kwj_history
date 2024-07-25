@@ -31,7 +31,16 @@ $ rm -rf .venv
 $ pdm venv create
 $ source .venv/bin/activate
 $ pdm install
-$ [pdm test|pytest]
+$ pdm list
+$ pytest
+================================================= test session starts ==================================================
+platform linux -- Python 3.11.9, pytest-8.3.1, pluggy-1.5.0
+rootdir: /home/kimpass189/kwj_history
+configfile: pyproject.toml
+plugins: cov-5.0.0
+collected 0 items
+
+================================================ no tests ran in 0.01s =================================================
 
 # option
 $ pdm add -dG test pytest pytest-cov
