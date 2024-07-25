@@ -12,6 +12,7 @@ license = {text = "MIT"}
 
 [project.scripts]
 hist = "kwj_history.cli:query"
+my-history = 'kwj_history.cli:cmd'
 
 [tool.pdm]
 distribution = true
