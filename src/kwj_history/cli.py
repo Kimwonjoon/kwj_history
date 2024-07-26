@@ -5,7 +5,7 @@ from tabulate import tabulate
 def cnt(q):
     df = read_parquet()
     df = pd.read_parquet('~/tmp/history.parquet')
-    fdf = df[df['cmd'].str.contains(q)]
+    fdf = df[df['cmd'] == q]
     cnt = fdf['cnt'].sum()
     #print(cnt)
     return cnt
